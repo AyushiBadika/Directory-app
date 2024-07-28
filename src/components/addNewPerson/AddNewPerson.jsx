@@ -119,7 +119,8 @@ export default function AddNewPerson() {
                 value={aadhar}
                 onChange={(e) => setAadhar(e.target.value)}
                 required
-                minLength={12}
+                min="100000000000"
+                max="999999999999"
               />
               <input
                 type="number"
@@ -129,7 +130,8 @@ export default function AddNewPerson() {
                 value={mobile}
                 onChange={(e) => setMobile(e.target.value)}
                 required="true"
-                minLength={10}
+                min="1000000000"
+                max="9999999999"
               />
               <input
                 className="border py-2 px-4  text-black grow bg-white "
